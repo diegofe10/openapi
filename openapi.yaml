@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+ title: Table Align Example
+ description: |
+ 
+  # Pet Store APIs
+  ## This is a sample Petstore server
+  ### Contains APIs to manage the pet store
+  #### Note that the APIs support Basic Authentication and OAUTH
+  ##### The samples contain Request and Response models
+  ###### There are status codes defined as well
+  <br>
+
+  **The below table defines the HTTP Status codes that this API may return**
+        
+  | Status Code      | Description | Reason                             |
+  | ---------------- | ------------| -----------------------------------|
+  | 201              | CREATED     | If a pet is created successfuly.   |
+  | 400              | BAD REQUEST | If the request is not valid.       |
+  | 401              | UNAUTHORIZED| If the credentials are invalid.    |
+   
+  <p>Sou um parágrafo,<br> e eu estou com você!</p> 
+   
+ version: '1.0'
+paths:
+ /:
+   get:
+     parameters: []
+     responses:
+       '200':
+         description: ''
+         content:
+           application/json:
+             schema:
+               type: string
